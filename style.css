@@ -2,6 +2,60 @@ body {
     background-color: #F0F2F5;
 }
 
+#login {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+    align-items: center;
+}
+
+form {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    height: 40vh;
+    width: 30vw;
+    position: relative;
+    box-shadow: 5px 6px 10px 5px rgb(155, 155, 155);
+}
+
+form>#input {
+    font-size: 20px;
+    width: 22vw;
+    height: 7.5vh;
+    border-radius: 4px;
+    border: 1px solid gray;
+    background: none;
+    text-align: center;
+}
+
+form>input:focus {
+    outline: none;
+}
+
+form>button {
+    margin-top: 4%;
+    width: 15vw;
+    height: 6vh;
+    color: white;
+    background-color: #D71340;
+    font-size: large;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+form>button:hover {
+    background-color: #ee3560;
+    transition: all 1s ease;
+}
+
+
 h1 {
     font-family: sans-serif;
     color: #D71340;
