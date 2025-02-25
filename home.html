@@ -15,10 +15,10 @@
 
     <div class="container">
         <div id="password">
-            <p id="random-pass"></p>
+            <p style="font-family: sans-serif;" id="random-pass"></p>
             <div id="icons">
-                <i class="fa-regular fa-copy" style="color: #636363; font-size: 30px;"></i>
-                <i class="fa-solid fa-rotate" style="color: #636363; font-size: 30px;"></i>
+                <i id="copy" onclick="textCopy()" class="fa-regular fa-copy" style="color: #636363; font-size: 30px;"></i>
+                <i onclick="random()" class="fa-solid fa-rotate" style="color: #636363; font-size: 30px;"></i>
             </div>
             <div class="bottom"></div>
         </div>
@@ -26,22 +26,27 @@
         <div class="control">
             <h2>Customize your password</h2>
             <div class="length">
-            <div class="pass">
-                <div class="para"><p><p>Password Length</p></p></div>
-                <div class="range">
-                <div id="box"></div>
-                <input type="range"  id="input" min="0" max="50">
+                <div class="pass">
+                    <div class="para">
+                        <p>Password Length</p>
+                    </div>
+                    <div class="range">
+                        <div id="box">50</div>
+                        <input onclick="rangeCounter()" type="range" value="50" id="input" min="0" max="50">
+                    </div>
+                </div>
+                <div class="check">
+                    <input type="checkbox" name="" id="all" value="all"><label for="all">All</label><br><br>
+                    <input type="checkbox" name="" id="uppercase" value="uppercase"><label for="uppercase">Uppercase</label><br><br>
+                    <input type="checkbox" name="" id="lowercase"><label for="lowercase">Lowercase</label><br><br>
+                    <input type="checkbox" name="" id="number"><label for="number">Number</label><br><br>
+                    <input type="checkbox" name="" id="symbol"><label for="symbol">Symbols</label><br><br>
+                </div>
             </div>
-            </div>
-            <div class="check">
-            <input type="checkbox" name="" id="uppercase"><label for="uppercase">Uppercase</label><br><br>
-            <input type="checkbox" name="" id="lowercase"><label for="lowercase">Lowercase</label><br><br>
-            <input type="checkbox" name="" id="number"><label for="number">Number</label><br><br>
-            <input type="checkbox" name="" id="symbol"><label for="symbol">Symbols</label><br><br>
-        </div>
-        </div>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
