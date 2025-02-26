@@ -275,12 +275,13 @@ function random() {
 }
 
 
-
-
 let createAttribute = document.getElementById('copy');
 createAttribute.setAttribute("title", "Copy")
 function textCopy() {
   let text = document.getElementById('random-pass').innerText;
   navigator.clipboard.writeText(text)
   createAttribute.setAttribute("title", "Copied")
+  setTimeout(() => {
+    createAttribute.setAttribute("title", "Copy")
+  }, 5000);
 }
