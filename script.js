@@ -282,6 +282,6 @@ function textCopy() {
   navigator.clipboard.writeText(text)
   createAttribute.setAttribute("title", "Copied")
   setTimeout(() => {
-    createAttribute.setAttribute("title", "Copy")
-  }, 5000);
+  createAttribute.setAttribute("title", "Copy")
+}, 5000);
 }
