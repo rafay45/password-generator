@@ -2,60 +2,6 @@ body {
     background-color: #F0F2F5;
 }
 
-#login {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    height: 90vh;
-    align-items: center;
-}
-
-form {
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    height: 40vh;
-    width: 30vw;
-    position: relative;
-    box-shadow: 5px 6px 10px 5px rgb(155, 155, 155);
-}
-
-form>#input {
-    font-size: 20px;
-    width: 22vw;
-    height: 7.5vh;
-    border-radius: 4px;
-    border: 1px solid gray;
-    background: none;
-    text-align: center;
-}
-
-form>input:focus {
-    outline: none;
-}
-
-form>button {
-    margin-top: 4%;
-    width: 15vw;
-    height: 6vh;
-    color: white;
-    background-color: rgb(9, 119, 9);
-    font-size: large;
-    font-weight: bold;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-}
-
-form>button:hover {
-    background-color: green;
-    transition: all 1s ease;
-}
-
-
 h1 {
     font-family: sans-serif;
     color: green;
@@ -90,6 +36,7 @@ h1 {
 #password>p {
     margin-left: 20px;
 }
+
 .bottom {
     bottom: 0;
     position: absolute;
@@ -166,11 +113,13 @@ h1 {
 input[type="range"] {
     accent-color: ForestGreen;
 }
+
 input[type="checkbox"] {
     accent-color: ForestGreen;
     cursor: pointer;
 }
-.check > label{
+
+.check>label {
     cursor: pointer;
     font-size: 20px;
 }
@@ -183,11 +132,13 @@ input[type="range"]::-webkit-slider-thumb {
 .range {
     display: flex;
 }
-.check > input{
+
+.check>input {
     width: 20px;
     height: 20px;
 }
-.container #password #random-pass{
+
+.container #password #random-pass {
     font-family: sans-serif;
     font-size: 20px;
     border: none;

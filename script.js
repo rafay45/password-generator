@@ -110,7 +110,7 @@ function random() {
       document.getElementById('random-pass').value = upperNumberUpdate;
     }
   }
-  
+
   let upperSymbol = document.getElementById('uppercase');
   let upperSymbolCheck = upperSymbol.checked;
   let symbolUpper = document.getElementById('symbol');
@@ -174,7 +174,7 @@ function random() {
       document.getElementById('random-pass').value = numberSymbolUpdate;
     }
   }
-  
+
   let uppLowNum = document.getElementById('uppercase');
   let uppLowNumCheck = uppLowNum.checked;
   let lowUppNum = document.getElementById('lowercase');
@@ -247,7 +247,7 @@ function random() {
     }
   }
 
-  if(upperCheck === true && lowerCheck === true && numberCheck === true && symbolCheck === true){
+  if (upperCheck === true && lowerCheck === true && numberCheck === true && symbolCheck === true) {
     let paraAll = document.getElementById('random-pass');
     paraAll.value = "Why not just go with 'All'?"
     paraAll.style.color = "red"
@@ -255,7 +255,7 @@ function random() {
 
   let para = document.getElementById('random-pass');
   let paraInner = para.value;
-  if(paraInner === ""){
+  if (paraInner === "") {
     para.value = "Which password do you want?"
     para.style.color = "red"
   }
