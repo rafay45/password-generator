@@ -6,7 +6,6 @@ function rangeCounter() {
   } else {
     document.getElementById('box').innerText = range
   }
-
 }
 function random() {
   let getAll = document.getElementById("all");
@@ -20,7 +19,7 @@ function random() {
     for (var i = 0; i < passLength; i++) {
       let allRandom = Math.floor(Math.random() * allPass.length)
       allUpdate += allPass[allRandom]
-      document.getElementById('random-pass').innerText = allUpdate;
+      document.getElementById('random-pass').value = allUpdate;
     }
   }
 
@@ -34,7 +33,7 @@ function random() {
     for (var i = 0; i < firstPassLength; i++) {
       let upperRandom = Math.floor(Math.random() * upperPass.length)
       upperUpdate += upperPass[upperRandom]
-      document.getElementById('random-pass').innerText = upperUpdate;
+      document.getElementById('random-pass').value = upperUpdate;
     }
   }
 
@@ -48,7 +47,7 @@ function random() {
     for (var i = 0; i < secondPassLength; i++) {
       let lowerRandom = Math.floor(Math.random() * lowerPass.length)
       lowerUpdate += lowerPass[lowerRandom]
-      document.getElementById('random-pass').innerText = lowerUpdate;
+      document.getElementById('random-pass').value = lowerUpdate;
     }
   }
 
@@ -62,7 +61,7 @@ function random() {
     for (var i = 0; i < thirdPassLength; i++) {
       let numberRandom = Math.floor(Math.random() * numberPass.length)
       numberUpdate += numberPass[numberRandom]
-      document.getElementById('random-pass').innerText = numberUpdate;
+      document.getElementById('random-pass').value = numberUpdate;
     }
   }
 
@@ -76,7 +75,7 @@ function random() {
     for (var i = 0; i < fourthPassLength; i++) {
       let symbolRandom = Math.floor(Math.random() * symbolPass.length)
       symbolUpdate += symbolPass[symbolRandom]
-      document.getElementById('random-pass').innerText = symbolUpdate;
+      document.getElementById('random-pass').value = symbolUpdate;
     }
   }
 
@@ -92,7 +91,7 @@ function random() {
     for (var i = 0; i < fifthPassLength; i++) {
       let upperLowerRandom = Math.floor(Math.random() * upperLowerPass.length)
       upperLowerUpdate += upperLowerPass[upperLowerRandom]
-      document.getElementById('random-pass').innerText = upperLowerUpdate;
+      document.getElementById('random-pass').value = upperLowerUpdate;
     }
   }
 
@@ -108,7 +107,7 @@ function random() {
     for (var i = 0; i < sixthPassLength; i++) {
       let upperNumberRandom = Math.floor(Math.random() * upperNumberPass.length)
       upperNumberUpdate += upperNumberPass[upperNumberRandom]
-      document.getElementById('random-pass').innerText = upperNumberUpdate;
+      document.getElementById('random-pass').value = upperNumberUpdate;
     }
   }
   
@@ -124,7 +123,7 @@ function random() {
     for (var i = 0; i < eightPassLength; i++) {
       let upperSymbolRandom = Math.floor(Math.random() * upperSymbolPass.length)
       upperSymbolUpdate += upperSymbolPass[upperSymbolRandom]
-      document.getElementById('random-pass').innerText = upperSymbolUpdate;
+      document.getElementById('random-pass').value = upperSymbolUpdate;
     }
   }
 
@@ -140,7 +139,7 @@ function random() {
     for (var i = 0; i < elevenPassLength; i++) {
       let lowerNumberRandom = Math.floor(Math.random() * lowerNumberPass.length)
       lowerNumberUpdate += lowerNumberPass[lowerNumberRandom]
-      document.getElementById('random-pass').innerText = lowerNumberUpdate;
+      document.getElementById('random-pass').value = lowerNumberUpdate;
     }
   }
 
@@ -156,7 +155,7 @@ function random() {
     for (var i = 0; i < elevenPassLength; i++) {
       let lowerSymbolRandom = Math.floor(Math.random() * lowerSymbolPass.length)
       lowerSymbolUpdate += lowerSymbolPass[lowerSymbolRandom]
-      document.getElementById('random-pass').innerText = lowerSymbolUpdate;
+      document.getElementById('random-pass').value = lowerSymbolUpdate;
     }
   }
 
@@ -172,7 +171,7 @@ function random() {
     for (var i = 0; i < eightPassLength; i++) {
       let numberSymbolRandom = Math.floor(Math.random() * numberSymbolPass.length)
       numberSymbolUpdate += numberSymbolPass[numberSymbolRandom]
-      document.getElementById('random-pass').innerText = numberSymbolUpdate;
+      document.getElementById('random-pass').value = numberSymbolUpdate;
     }
   }
   
@@ -190,7 +189,7 @@ function random() {
     for (var i = 0; i < seventhPassLength; i++) {
       let uppLowNumRandom = Math.floor(Math.random() * uppLowNumPass.length)
       uppLowNumUpdate += uppLowNumPass[uppLowNumRandom]
-      document.getElementById('random-pass').innerText = uppLowNumUpdate;
+      document.getElementById('random-pass').value = uppLowNumUpdate;
     }
   }
 
@@ -208,7 +207,7 @@ function random() {
     for (var i = 0; i < ninthPassLength; i++) {
       let uppLowsymRandom = Math.floor(Math.random() * uppLowsymPass.length)
       uppLowsymUpdate += uppLowsymPass[uppLowsymRandom]
-      document.getElementById('random-pass').innerText = uppLowsymUpdate;
+      document.getElementById('random-pass').value = uppLowsymUpdate;
     }
   }
 
@@ -226,7 +225,7 @@ function random() {
     for (var i = 0; i < tenPassLength; i++) {
       let uppNumsymRandom = Math.floor(Math.random() * uppNumsymPass.length)
       uppNumsymUpdate += uppNumsymPass[uppNumsymRandom]
-      document.getElementById('random-pass').innerText = uppNumsymUpdate;
+      document.getElementById('random-pass').value = uppNumsymUpdate;
     }
   }
 
@@ -244,32 +243,27 @@ function random() {
     for (var i = 0; i < tenPassLength; i++) {
       let lownumsymRandom = Math.floor(Math.random() * lownumsymPass.length)
       lownumsymUpdate += lownumsymPass[lownumsymRandom]
-      document.getElementById('random-pass').innerText = lownumsymUpdate;
+      document.getElementById('random-pass').value = lownumsymUpdate;
     }
   }
 
   if(upperCheck === true && lowerCheck === true && numberCheck === true && symbolCheck === true){
     let paraAll = document.getElementById('random-pass');
-    paraAll.innerText = "Why not just go with 'All'?"
+    paraAll.value = "Why not just go with 'All'?"
     paraAll.style.color = "red"
   }
 
   let para = document.getElementById('random-pass');
-  let paraInner = para.innerText;
+  let paraInner = para.value;
   if(paraInner === ""){
-    para.innerText = "Which password do you want?"
+    para.value = "Which password do you want?"
     para.style.color = "red"
   }
 }
 
-
-let createAttribute = document.getElementById('copy');
-createAttribute.setAttribute("title", "Copy")
 function textCopy() {
-  let text = document.getElementById('random-pass').innerText;
-  navigator.clipboard.writeText(text)
-  createAttribute.setAttribute("title", "Copied")
-  setTimeout(() => {
-  createAttribute.setAttribute("title", "Copy")
-}, 5000);
+  var input = document.getElementById('random-pass')
+  let value = document.getElementById('random-pass').value
+  window.navigator.clipboard.writeText(value)
+  input.select()
 }
